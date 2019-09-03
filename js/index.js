@@ -43,3 +43,14 @@ window.addEventListener('keyup', (event) => {
 window.addEventListener("load", () => {
     alert("This page was loaded successfully!");
 });
+
+//keypress 
+const pressKey =  document.querySelectorAll('img');
+
+window.addEventListener('keypress', (event) => {
+    if(event.keyCode == '32'){
+        pressKey[0].style.visibility = 'visible';
+    }
+})
+
+
