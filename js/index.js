@@ -57,7 +57,6 @@ window.addEventListener('keypress', (event) => {
 const bodyWheel = document.querySelector('body');
 
 bodyWheel.addEventListener('wheel', (event) => {
-    event.stopPropagation();
     event.currentTarget.style.backgroundColor = 'lightgray';
 })
 
@@ -70,6 +69,23 @@ introHeader.addEventListener('mousedown', (event) =>{
 
 // //preventDefault()
 navItem.forEach(item => item.addEventListener('click', e => e.preventDefault()));
+
+//stopPropagation()
+const textContentH2 = document.querySelectorAll('.text-content h2');
+textContentH2.forEach((content) => {
+    content.addEventListener('click', (event) => {
+        event.stopPropagation();
+        alert('h2 in text-content');
+    })
+});
+
+const textContentP = document.querySelectorAll('.text-content p');
+textContentP.forEach((content) => {
+    content.addEventListener('click', (event) => {
+        event.stopPropagation();
+        alert('p in text-content');
+    })
+});
 
 
 
