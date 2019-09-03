@@ -3,8 +3,11 @@
 //Mouseover
 const navItem = document.querySelectorAll('.nav-link')
 
-navItem.forEach(item => item.addEventListener('mouseover', e => e.target.style.color = 'green')   
-);
+navItem.forEach(item => item.addEventListener('mouseover', e => e.target.style.color = 'green'))
+
+//Mouseout
+navItem.forEach(item1 => item1.addEventListener('mouseout', e =>
+e.target.style.color = 'red'))
 
 //keydown
 window.addEventListener('keydown', keypressed, false);
@@ -26,6 +29,7 @@ const venice = document.querySelectorAll('div.img-content')[1];
 
 venice.addEventListener('dblclick', event =>
 event.target.style.maxWidth = '200%');
+
 
 
     
