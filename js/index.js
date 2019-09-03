@@ -31,11 +31,15 @@ venice.addEventListener('dblclick', event =>
 event.target.style.maxWidth = '200%');
 
 //keyup
-const hideImages = document.querySelectorAll('img');
+const hideImage = document.querySelectorAll('img');
 
 window.addEventListener('keyup', (event) => {
-    if (event.keyCode == 72) {
-        hideImages[0].style.visibility = 'hidden';
+    if (event.keyCode == '72') {
+        hideImage[0].style.visibility = 'hidden';
     }
   });
 
+// Load
+window.addEventListener("load", () => {
+    alert("This page was loaded successfully!");
+});
