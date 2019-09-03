@@ -21,7 +21,11 @@ const logoHeading = document.querySelector('h1');
 logoHeading.addEventListener('click', event => 
 event.target.style['font-weight'] = 'bold');
 
+//dblclick
+const venice = document.querySelectorAll('div.img-content')[1];
 
+venice.addEventListener('dblclick', event =>
+event.target.style.maxWidth = '200%');
 
 
     
