@@ -68,7 +68,8 @@ introHeader.addEventListener('mousedown', (event) =>{
     event.target.style.color = 'orange';
 })
 
-
+// //preventDefault()
+navItem.forEach(item => item.addEventListener('click', e => e.preventDefault()));
 
 
 
