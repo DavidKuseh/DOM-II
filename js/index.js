@@ -61,6 +61,13 @@ bodyWheel.addEventListener('wheel', (event) => {
     event.currentTarget.style.backgroundColor = 'lightgray';
 })
 
+//mousedown
+const introHeader = document.querySelector('header h2');
+
+introHeader.addEventListener('mousedown', (event) =>{
+    event.target.style.color = 'orange';
+})
+
 
 
 
