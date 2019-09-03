@@ -28,7 +28,7 @@ event.target.style['font-weight'] = 'bold');
 const venice = document.querySelectorAll('div.img-content')[1];
 
 venice.addEventListener('dblclick', event =>
-event.target.style.maxWidth = '200%');
+event.target.style.maxWidth = '70%');
 
 //keyup
 const hideImage = document.querySelectorAll('img');
@@ -45,12 +45,23 @@ window.addEventListener("load", () => {
 });
 
 //keypress 
-const pressKey =  document.querySelectorAll('img');
+const showImg =  document.querySelectorAll('img');
 
 window.addEventListener('keypress', (event) => {
     if(event.keyCode == '32'){
-        pressKey[0].style.visibility = 'visible';
+        showImg[0].style.visibility = 'visible';
     }
 })
+
+//wheel
+const bodyWheel = document.querySelector('body');
+
+bodyWheel.addEventListener('wheel', (event) => {
+    event.stopPropagation();
+    event.currentTarget.style.backgroundColor = 'lightgray';
+})
+
+
+
 
 
