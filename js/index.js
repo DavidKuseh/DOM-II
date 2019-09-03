@@ -7,9 +7,6 @@ navItem.forEach(item => item.addEventListener('mouseover', e => e.target.style.c
 );
 
 //keydown
-
-const logoHeading = document.querySelector('.logo-heading');
-
 window.addEventListener('keydown', keypressed, false);
 
 function keypressed(key) {
@@ -17,6 +14,14 @@ function keypressed(key) {
         alert("a has been pressed");
     }
 }
+
+//click
+const logoHeading = document.querySelector('h1');
+
+logoHeading.addEventListener('click', event => 
+event.target.style['font-weight'] = 'bold');
+
+
 
 
     
